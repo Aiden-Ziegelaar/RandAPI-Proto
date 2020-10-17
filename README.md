@@ -1,6 +1,6 @@
 # RandAPI-Proto
 
-This repository defines an interface for a GRPC service that provides random numbers based 
+This repository defines an interface for a gRPC service that provides random numbers based 
 on a random number generator seeded with rotating entropy. For the implementation of this 
 API see ###. 
 
