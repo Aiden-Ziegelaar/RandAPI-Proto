@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-option go_package = "go/grpcService";
+option go_package = "service/grpcService";
 
-import "src/boolean.proto";
-import "src/integer.proto";
+import "boolean.proto";
+import "integer.proto";
 
 import "google/protobuf/empty.proto";
 
