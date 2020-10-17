@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option go_package = "go/dto";
+
+message BooleanResponse {
+  bool Result = 1;
+}
+
+message WeightedBooleanRequest {
+  int32 FalseWeight = 1;
+  int32 TrueWeight = 2;
+}

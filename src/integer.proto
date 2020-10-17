@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "go/dto";
+
+message IntegerRequest {
+  int32 max = 1;
+}
+
+message IntegerResponse {
+  int32 result = 1;
+}

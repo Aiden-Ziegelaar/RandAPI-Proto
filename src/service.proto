@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "go/grpcService";
+
+import "src/boolean.proto";
+import "src/integer.proto";
+
+import "google/protobuf/empty.proto";
+
+service RandAPI {
+  rpc WeightedBoolean (WeightedBooleanRequest) returns (BooleanResponse);
+
+  rpc Boolean (google.protobuf.Empty) returns (BooleanResponse);
+
+  rpc IntegerN (IntegerRequest) returns (IntegerResponse);
+
+  rpc Integer (google.protobuf.Empty) returns (IntegerResponse);
+}
